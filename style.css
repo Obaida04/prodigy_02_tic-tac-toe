@@ -1,0 +1,154 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+}
+/* 
+nav{
+    background-color: black;
+    color: azure;
+    height: 85px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+} */
+.gameContainer{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20vw;
+}
+
+.container{
+    margin-top: 5vw;
+    margin-left: 15vw;
+    padding-bottom:  10vw;
+ display: grid;
+ grid-template-rows: repeat(3,10vw);
+ grid-template-columns: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.box:hover{
+    background-color: rgb(189, 149, 227);
+}
+
+.image{
+    height: 100vh;
+    /* background: url(abcd.png);  */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  h1{
+    position: relative;
+    /* top: 150%; */
+    transform: translate(-50%);
+    margin: 25px;
+    padding: 0;
+    text-align: center;
+    font-size: 10em;
+    color: #fff;
+    text-decoration: uppercase;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 1); 
+    mix-blend-mode: overlay;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 1); 
+    /* background: rgba(0, 0, 0, 1); */
+ }
+
+ .gameInfo{
+    width: 45vw;
+    height: 40vw;
+    margin-top: 1px; 
+    margin-left: 48vw;
+    justify-content: center;
+     
+ }
+
+ .info{
+    font-size: 4.5vw;
+    margin-left: 5vw;
+
+ }
+ #reset{
+    margin-top: 16vw;
+    margin-left: 10vw;
+    width: 12vw;
+    height: 6vw;
+    font-size: 3vw;
+    background-color: black;
+    color: #fff;
+ }
+
+  body{
+     background: linear-gradient(45deg,rgb(105, 105, 241),rgb(228, 99, 99));
+ }
+
+ .br-0{
+    border-right: 0;
+ }
+ .bl-0{
+    border-left: 0;
+ }
+ .bt-0{
+    border-top: 0;
+ }
+ .bb-0{
+    border-bottom: 0;
+ }
+
+
+ @media screen and (max-width: 738px) {
+    body {
+      height: 100vh;
+    }
+ }
+
+ @media (max-width: 750px) {
+    h1 {
+      font-size: 40px;
+
+    }
+    .gameInfo{
+        height: 20vw;
+        width: 70vw;
+    }
+    .gameContainer{
+        margin-top: 10vw;
+        margin-left: 15vw;
+        height: 40vw;
+        width: 70vw;
+    }
+    .container{
+        height: 20vw;
+        width: 50vw;
+        margin-left: 10vw;
+        margin-top: 5vw;
+    }
+    .info{
+        font-size: 6vw;
+    }
+     #reset{
+        margin-top: 4vw;
+      }
+    
+  }
+  
+  
